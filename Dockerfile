@@ -12,6 +12,6 @@ FROM openjdk:11
 COPY /target/fakiture-api-0.0.1-SNAPSHOT.jar fakiture-api.jar
 # ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/fakiture-api.jar"]
+CMD ["java", "-jar", "/fakiture-api.jar"]
 
 
